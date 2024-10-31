@@ -1,0 +1,22 @@
+[default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+optimizer = true
+optimize_runs = 200
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+op_sepolia = "${OP_SEPOLIA_RPC_URL}"
+
+[profile.sepolia]
+chain_id = 11155111
+rpc_url = "${SEPOLIA_RPC_URL}"
+
+[profile.op_sepolia]
+chain_id = 11155420
+rpc_url = "${OP_SEPOLIA_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+optimism-goerli = { key = "${OPTIMISM_ETHERSCAN_API_KEY}" }
